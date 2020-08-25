@@ -1,0 +1,24 @@
+## serials list
+https://www.filimo.com/cms/movie/loadmore/tagid/1001/more_type/infinity/show_serial_parent/1/perpage/8/page/4
+
+## button 
+response.css('button.request-link ::attr(data-href)').extract()
+
+## serial like-rate percent per episode 
+ response.css('div.accordion > li.accordion-item > div.accordion-top > div.right > span.episode-rate > span.percent ::text').extract()
+
+## movie name in movie page
+response.css('h1.movie-title>span.fa::text').extract()
+response.css('h1.movie-title>span.en::text').extract()
+
+## movie comment rating
+response.css('div.rating-wrapper > div.ds-badge > span.ds-badge_label > span[id] ::text').extract()
+
+## movie rating count 
+response.css('div.rating-wrapper > div.ds-badge > span.ds-badge_label > span.total-number > span[id] ::text').extract()
+
+## movie imdb rating
+response.css('div.rating-wrapper > div.ds-badge > span.ds-badge_label > span.en ::text').extract()
+
+##movie director
+response.css('div.mobile-wrapper > div.meta-wrapper > div.movie-director > a ::text').extract()

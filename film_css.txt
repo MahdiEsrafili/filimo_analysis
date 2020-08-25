@@ -1,0 +1,17 @@
+## comment name
+response.css('ul.comment-list > li.comment-item > div.comment-left-side > div.comment-info > span.comment-name ::text').extract()
+
+## comment date
+response.css('ul.comment-list > li.comment-item > div.comment-left-side > div.comment-info > span.comment-date ::text').extract()
+
+## comment likes
+response.css('ul.comment-list > li.comment-item > div.comment-left-side > div.comment-info > div.rate > span.like > button.thumbs-up > i.like-count::text').extract()
+
+## comment dislikes
+response.css('ul.comment-list > li.comment-item > div.comment-left-side > div.comment-info > div.rate > span.like > button.thumbs-down > i.like-count::text').extract()
+
+## comment text
+response.css('ul.comment-list > li.comment-item > div.comment-left-side > div.comment-body > p.comment-content::text').extract()
+
+## load more comments
+response.css('div.loadmore-link > button.comments-loadmore ::attr(data-href)').extract()
